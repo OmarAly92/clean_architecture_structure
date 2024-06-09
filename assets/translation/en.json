@@ -1,0 +1,19 @@
+{
+  "****************** Remote Exception ******************": "****************** Remote Exception ******************",
+  "connectionTimeout": "Connection Timeout: Unable to connect to the server. Please try again later.",
+  "sendTimeout": "Send Timeout: Request timed out while sending data. Please check your connection and try again.",
+  "receiveTimeout": "Receive Timeout: Server took too long to respond. Please try again later.",
+  "badRequest": "Bad Request: The server could not understand the request due to invalid syntax.",
+  "unauthorized": "Unauthorized: Access is denied due to invalid credentials.",
+  "forbidden": "Forbidden: You do not have the necessary permissions to access this resource.",
+  "notFound": "Not Found: The requested resource could not be found on the server.",
+  "conflict": "Conflict: There was a conflict with the current state of the resource.",
+  "internalServerError": "Internal Server Error: The server encountered an error and could not complete your request.",
+  "serverError": "Server Error: An unexpected error occurred while processing your request.",
+  "cancel": "Request Canceled: The request was canceled before completion.",
+  "unknown": "Network Error: No internet connection. Please check your network settings.",
+  "badCertificate": "Security Error: The SSL/TLS certificate is invalid.",
+  "connectionError": "Connection Error: There was a problem connecting to the server. Please try again.",
+  "unexpectedError": "Unexpected Error: An unknown error occurred. Please try again later."
+}
+

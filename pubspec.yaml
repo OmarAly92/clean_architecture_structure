@@ -1,0 +1,57 @@
+name: clean_architecture_structure
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Default icons asset for Cupertino widgets based on Apple styled icons
+  cupertino_icons: ^1.0.2
+  # A Dart package that helps to implement value based equality without needing to explicitly override == and hashCode.
+  equatable: ^2.0.5
+  # Functional Programming in Dart. Purify your Dart code using efficient immutable data structures, monads, lenses and other FP tools.
+  dartz: ^0.10.1
+  # For Api requests
+  dio: ^5.4.3+1
+  # For service locator
+  get_it: ^7.6.7
+  # A Flutter package to check your internet connection with sub-second response times, even on mobile networks!
+  internet_connection_checker_plus: ^2.2.0
+  # Easy and Fast internationalizing and localization your Flutter Apps, this package simplify the internationalizing process
+  easy_localization: ^3.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/jpg
+    - assets/images/png
+    - assets/images/svg
+    - assets/fonts
+    - assets/translation
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
