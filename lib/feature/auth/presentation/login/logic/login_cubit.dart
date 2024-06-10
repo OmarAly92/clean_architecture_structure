@@ -4,10 +4,10 @@ import 'package:clean_architecture_structure/feature/auth/domain/use_case/login_
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part 'auth_state.dart';
+part 'login_state.dart';
 
-class AuthCubit extends Cubit<AuthState> {
-  AuthCubit(this._loginUseCase) : super(AuthInitial());
+class LoginCubit extends Cubit<LoginState> {
+  LoginCubit(this._loginUseCase) : super(LoginInitial());
 
   final LoginUseCase _loginUseCase;
 

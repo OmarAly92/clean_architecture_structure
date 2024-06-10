@@ -1,1 +1,3 @@
-abstract class RouteStrings {}
+abstract class RouteStrings {
+  static const login = '/login';
+}

@@ -1,1 +1,3 @@
-abstract class AppStrings {}
+abstract class AppStrings {
+  static const noRouteFound = 'No Route found';
+}

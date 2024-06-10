@@ -1,4 +1,6 @@
 import 'package:clean_architecture_structure/core/network/dio_consumer.dart';
+import 'package:clean_architecture_structure/feature/auth/domain/use_case/login_use_case.dart';
+import 'package:clean_architecture_structure/feature/auth/presentation/login/logic/login_cubit.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
@@ -10,7 +12,11 @@ final sl = GetIt.instance;
 class ServiceLocator {
   static Future<void> inIt() async {
     /// Features
-    // Blocs
+    // Cubit
+    sl.registerFactory(() => LoginCubit(sl()));
+
+    // Use Case
+    sl.registerLazySingleton(() => LoginUseCase(sl()));
 
     // Repository
 

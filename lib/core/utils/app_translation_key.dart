@@ -30,4 +30,6 @@ abstract class AppTranslationKey {
   static const unexpectedError = 'unexpectedError';
 
   static const noInternet = 'noInternet';
+
+  static const noRouteFound = 'noRouteFound';
 }
