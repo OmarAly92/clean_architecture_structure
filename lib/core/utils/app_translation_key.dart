@@ -28,4 +28,6 @@ abstract class AppTranslationKey {
   static const connectionError = 'connectionError';
 
   static const unexpectedError = 'unexpectedError';
+
+  static const noInternet = 'noInternet';
 }

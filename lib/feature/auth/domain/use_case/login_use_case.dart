@@ -8,8 +8,7 @@ class LoginUseCase implements UseCaseWithParams {
   final AuthRepository _repository;
 
   @override
-  Future<Result> call(params) {
-    // TODO: implement call
-    throw UnimplementedError();
+  FutureResult call(params) async {
+    return await _repository.login(params);
   }
 }

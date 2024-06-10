@@ -14,6 +14,7 @@
   "unknown": "Network Error: No internet connection. Please check your network settings.",
   "badCertificate": "Security Error: The SSL/TLS certificate is invalid.",
   "connectionError": "Connection Error: There was a problem connecting to the server. Please try again.",
-  "unexpectedError": "Unexpected Error: An unknown error occurred. Please try again later."
+  "unexpectedError": "Unexpected Error: An unknown error occurred. Please try again later.",
+  "noInternet": "No internet connection. Please check your network settings and try again."
 }
 
