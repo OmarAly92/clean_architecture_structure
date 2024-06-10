@@ -21,14 +21,16 @@ class AuthRepositoryImp implements AuthRepository {
       try {
         final result = await _remoteDataSourceImp.login(params);
         return Right(result);
-      } on Failure catch (e) {
-        return Left(ServerFailure(message: e.message, statusCode: e.statusCode));
+      } on Failure catch (error) {
+        return Left(ServerFailure(message: error.message, statusCode: error.statusCode));
       }
     } else {
-      return const Left(ServerFailure(
-        message: AppTranslationKey.noInternet,
-        statusCode: StatusCode.noInternet,
-      ));
+      return const Left(
+        ServerFailure(
+          message: AppTranslationKey.noInternet,
+          statusCode: StatusCode.noInternet,
+        ),
+      );
     }
   }
 }
