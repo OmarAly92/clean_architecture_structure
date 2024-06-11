@@ -1,4 +1,6 @@
 import 'package:clean_architecture_structure/core/network/dio_consumer.dart';
+import 'package:clean_architecture_structure/feature/auth/data/data_source/remote_data_source/auth_remote_data_source.dart';
+import 'package:clean_architecture_structure/feature/auth/data/repository/auth_repository_imp.dart';
 import 'package:clean_architecture_structure/feature/auth/domain/use_case/login_use_case.dart';
 import 'package:clean_architecture_structure/feature/auth/presentation/login/logic/login_cubit.dart';
 import 'package:dio/dio.dart';
@@ -19,8 +21,11 @@ class ServiceLocator {
     sl.registerLazySingleton(() => LoginUseCase(sl()));
 
     // Repository
+    sl.registerLazySingleton(
+        () => AuthRepositoryImp(sl<AuthRemoteDataSourceImp>(), sl<NetworkStatus>()));
 
     // Data Sources
+    sl.registerLazySingleton(() => AuthRemoteDataSourceImp(sl<DioConsumer>()));
 
     /// Core
     sl.registerLazySingleton<NetworkStatus>(() => NetworkStatusImp(sl()));
