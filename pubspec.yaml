@@ -27,6 +27,8 @@ dependencies:
   easy_localization: ^3.0.5
   # Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package.
   flutter_bloc: ^8.1.5
+  # aims to support different Flutter targets by relying on the many platforms supported by Sentry with native SDKs.
+  sentry_flutter: ^8.2.0
 
 dev_dependencies:
   flutter_test:
