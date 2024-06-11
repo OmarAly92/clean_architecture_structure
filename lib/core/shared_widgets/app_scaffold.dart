@@ -10,6 +10,7 @@ class AppScaffold extends StatelessWidget {
     this.bottomNavigationBar,
     this.bottomSheet,
     this.drawer,
+    this.endDrawer,
     this.floatingActionButton,
     this.padding,
   }) : super(key: key);
@@ -18,6 +19,7 @@ class AppScaffold extends StatelessWidget {
   final Widget? bottomNavigationBar;
   final Widget? bottomSheet;
   final Widget? drawer;
+  final Widget? endDrawer;
   final Widget? floatingActionButton;
   final EdgeInsets? padding;
 
@@ -34,6 +36,7 @@ class AppScaffold extends StatelessWidget {
       bottomSheet: bottomSheet,
       drawer: drawer,
       floatingActionButton: floatingActionButton,
+      endDrawer: endDrawer,
     );
   }
 }

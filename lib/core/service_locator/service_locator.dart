@@ -13,7 +13,7 @@ class ServiceLocator {
   static Future<void> inIt() async {
     /// Features
     // Cubit
-    sl.registerFactory(() => LoginCubit(sl()));
+    sl.registerFactory(() => LoginCubit(sl<LoginUseCase>()));
 
     // Use Case
     sl.registerLazySingleton(() => LoginUseCase(sl()));
