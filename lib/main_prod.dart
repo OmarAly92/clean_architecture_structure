@@ -1,4 +1,3 @@
-import 'package:clean_architecture_structure/core/helper/try_catch.dart';
 import 'package:clean_architecture_structure/feature/auth/presentation/login/ui/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
@@ -15,13 +14,13 @@ Future<void> main() async {
     appRunner: () => runApp(const MyApp()),
   );
 
-  tryCatch(
-    onTry: () {
-      int? test;
-      test! + 3;
-    },
-    onCatch: () {},
-  );
+  // tryCatch(
+  //   onTry: () {
+  //     int? test;
+  //     test! + 3;
+  //   },
+  //   onCatch: () {},
+  // );
 }
 
 class MyApp extends StatelessWidget {

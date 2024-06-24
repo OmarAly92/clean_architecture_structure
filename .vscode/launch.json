@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Clean Prod",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_prod.dart",
+      "args": [
+        "--flavor",
+        "prod",
+        "--target",
+        "lib/main_prod.dart"
+      ]
+    },
+    {
+      "name": "Clean Dev",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main_dev.dart",
+      "args": [
+        "--flavor",
+        "dev",
+        "--target",
+        "lib/main_dev.dart"
+      ]
+    }
+  ],
+  "compounds": []
+}
