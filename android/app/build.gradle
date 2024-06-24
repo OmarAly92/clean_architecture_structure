@@ -25,7 +25,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.example.clean_architecture_structure"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -42,6 +42,20 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        prod{
+            dimension "default"
+            resValue "string","app_name","Clean Prod"
+        }
+        dev{
+            dimension "default"
+            applicationIdSuffix ".dev"
+            resValue "string","app_name","Clean Dev"
+        }
     }
 
     buildTypes {
